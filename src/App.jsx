@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Videos from './pages/Videos';
 import Root from './pages/Root';
 import VideoDetail from './pages/VideoDetail';
+import Posts from './pages/Posts';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: '/videos/:videoId',
         element: <VideoDetail />
+      },
+      {
+        path: '/posts',
+        element: <Posts />
       },
     ]
   },
